@@ -1,0 +1,128 @@
+:root {
+    --secondary: #ffffff;
+    --primary: #e0b1cb;
+    --accent : #9f86c0
+  }
+
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    
+}
+*:focus{
+    outline: none;
+}
+
+.the-container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+    }
+
+.form-container{
+    background-color: var(--accent);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}   
+
+
+
+
+
+.form-holder{
+    width: 70%;
+    height: 480px;
+    background-color: var(--primary);
+    border-radius: 30px;
+    border : 5px solid var(--secondary)
+    /* box-shadow: 0px 0px 5px 3px rgb(210, 210, 210); */
+    
+}
+
+
+.the-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px; 
+}
+
+.the-form h1{
+    color: var(--secondary);
+}
+
+.form-button {
+    background-color: var(--secondary); 
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 25px;
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .form-button:hover {
+    box-shadow: 0 0px 1px 3px var(--secondary);
+    background-color: var(--primary); 
+    color: var(--secondary);
+
+  }
+
+  .fullname , .email , .mobile {
+    background-color: var(--secondary);
+    border-radius: 25px;
+  }
+
+  
+
+  .display-container{
+    background-color: var(--primary);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.display-holder{
+    width: 70%;
+    height: 480px;
+    background-color: var(--accent);
+    border-radius: 30px;
+    border : 5px solid var(--secondary)
+}
+
+.the-display{
+    color: var(--secondary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left:30px ;
+    padding-bottom: 50px;
+}
+
+.display-holder h1{
+    color: var(--secondary);
+    padding-top : 10px;
+}
+
+::placeholder{
+    padding: 15px;
+    color: rgb(190, 188, 188);
+}
