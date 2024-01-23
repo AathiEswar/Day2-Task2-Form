@@ -10,4 +10,8 @@ document.addEventListener("submit" , (ev)=>{
     document.getElementById("fullname-dis").innerHTML = fullname;
     document.getElementById("email-dis").innerHTML = email;
     document.getElementById("mobile-dis").innerHTML = mobile;
+
+    document.getElementById("fullname-dis").style.animation = "fade-in 2s";
+    document.getElementById("email-dis").style.animation = "fade-in 2s";
+    document.getElementById("mobile-dis").style.animation = "fade-in 2s";
 })
